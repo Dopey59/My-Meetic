@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+header{
+    background-color: #071e3e;
+    color: white;
+}
+
+a{
+    color: white;
+}
+
+form {
+    padding: 20px;
+}
+
+.left-arrow{
+    padding-top: 35px;
+}
+
+.left-arrow:hover{
+    opacity: 90%;
+    color: white;
+}
+
+#searchSubmit {
+    width: 40%;
+    margin: auto;
+    border-radius: 10px;
+    margin-left: 30%;
+}
+
+#optAge {
+    color: black;
+}
+
+.form-group {
+    padding: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+label {
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+input[type="text"], input[type="password"], input[type="e-mail"], input[type="date"], select{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 5px #ccc;
+    width: 100%;
+}
+
+#sexe{
+    background-color: #DC436A;
+    color: white;
+    padding: 10px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+
+}
+
+option{
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #DC436A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #B83757;
+}
+
+#search {
+    color: white;
+}

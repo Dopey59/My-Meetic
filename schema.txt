@@ -1,0 +1,77 @@
+Je dois afficher les informations de l'utilisateur connecté sur ma page "account.php"
+-> Informations que j'ai récupérée grace à l'envoie du formulaire d'inscription
+
+Où sont les informations ?
+-> Les infos sont stockés dans la base de données
+-> Je dois donc faire une query qui va chercher l'id de l'utilisateur connecté
+
+Query : SELECT * FROM user where id = ?
+
+Je dois  sûrement stocker l'id de l'utilisateur dans une variable pour pouvoir compléter ma query.
+
+ci-dessous se trouve les infos utilisateurs grace aux formulaire remplis : 
+
+
+//Récupère les données
+if(count($_GET) !== 0){
+
+    $lastname = $GET['lastname'];
+    $firstname = $GET ['firstname'];
+    $birthdate = $GET['date'];
+    $gender = $GET['gender'];
+    $city = $GET['city'];
+    $email = $GET['email'];
+    $psw = $GET['psw'];
+    $hobbies = $GET['hobbies'];
+
+//Requêtes SQL
+
+
+
+
+
+ // Système d'affichage des données trouver selon les requêtes
+    $row = $result->fetch_all(MYSQLI_ASSOC);
+
+    echo "Informations du compte:" "<br/><br/>";
+
+    $table = "";
+    $table .= "<table>";
+    $table .= "<tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Age</th>
+                <th>Genre</th>
+                th>Ville</th>
+                <th>E-mail</th>
+                <th>Mot de passe</th>
+                <th>Hobbies</th>
+
+                </tr>";
+    foreach($row as $display){
+        $lastname = $display['lastnam'];
+        $firstname = $display['firstname'];
+        $birthdate = $display['date'];
+        $gender = $display['gender'];
+        $city = $display['city'];
+        $email = $display['email'];
+        $psw = $display['psw'];
+        $hobbies = $display['hobbies'];
+
+        {
+        $table .= "<tr>
+                    <td>$lastname</td>
+                    <td>$firstname</td>
+                    <td>$birthdate</td>
+                    <td>$gender</td>
+                    <td>$city</td>
+                    <td>$email</td>
+                    <td>$psw</td>
+                    <td>$hobbies</td>
+                    </tr>";
+
+        }
+    }
+    $table .= "</table>";
+    echo $table;
+}

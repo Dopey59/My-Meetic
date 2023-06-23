@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.mainNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navItems{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.navConnexion{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+button{
+    background-color: white;
+    border: 3px solid #58B865;
+    color: #58B865;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+button:hover{
+    color: white;
+    background-color: #DC436A;
+    border: 3px solid #DC436A ;
+    border-radius: 10px;
+    padding: 10px;
+    cursor:pointer;
+}
+
+#accueil{
+    color: #DC436A;
+}
+
+#accueil:hover{
+    color: #B83757;
+}
+
+#cnx{
+    background-color: #DC436A;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#cnx:hover{
+    background-color: #B83757;
+}
+
+.btn2:hover{
+    background-color: #387540;
+    border: 3px solid #387540 ;
+
+    color: white;
+}
+
+a:hover {
+    color: #DC436A;
+}
+
+a{
+    font-weight: 600;
+}
+
+h1{
+    color: #DC436A;
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    color: black;
+}
+
+li{
+    padding: 40px;
+}
+
+#searchBtn {
+    color: black;
+}
+
+
+.btn2{
+    background-color: #58B865;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 22px;
+    width: 200%;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundAccueil{
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/couple.jpg');
+    background-position-y: center;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    color: white;
+}
+
+.sommaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+}
+
+#sommTitle{
+    color: white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}

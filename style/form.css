@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body{
+    height: 100vh;
+}
+
+
+.form-container{
+    background-image: url('../assets/flowers.png');
+    background-position-y: center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+
+}
+
+.itemForm{
+    padding-bottom: 50px ;
+}
+
+form{
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#submitCnx{
+    background-color: #DC436A;
+    border-color: #DC436A;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    font-weight: 700;
+
+}
+
+#submitCnx:hover{
+    cursor: pointer;
+    background-color: #B83757;
+    border-color: #B83757;
+
+}
+
+label{
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+input{
+    border-radius: 10px;
+    border-color: white;
+    border: white 4px solid;
+    padding: 10px;
+}
+
+section{
+        display: flex;
+        justify-content: center;
+        height: 700px;
+        align-items: center;
+}
